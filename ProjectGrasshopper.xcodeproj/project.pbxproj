@@ -13,6 +13,10 @@
 		9F238DBF1C89766D00A78D6C /* ProjectGrasshopper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F238DBD1C89766D00A78D6C /* ProjectGrasshopper.xcdatamodeld */; };
 		9F238DC11C89766D00A78D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F238DC01C89766D00A78D6C /* Assets.xcassets */; };
 		9F238DC41C89766D00A78D6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F238DC21C89766D00A78D6C /* LaunchScreen.storyboard */; };
+		9F238DD11C8C135A00A78D6C /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238DCF1C8C135A00A78D6C /* Recipe.swift */; };
+		9F238DD51C8C190D00A78D6C /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238DD41C8C190D00A78D6C /* Recipe+CoreDataProperties.swift */; };
+		9F238DD71C8C1FC100A78D6C /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238DD61C8C1FC100A78D6C /* RecipeCell.swift */; };
+		9F238DD91C9120AD00A78D6C /* CreateRecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238DD81C9120AD00A78D6C /* CreateRecipeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		9F238DC01C89766D00A78D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F238DC31C89766D00A78D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F238DC51C89766D00A78D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F238DCF1C8C135A00A78D6C /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
+		9F238DD41C8C190D00A78D6C /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9F238DD61C8C1FC100A78D6C /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		9F238DD81C9120AD00A78D6C /* CreateRecipeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRecipeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,10 @@
 		9F238DB51C89766D00A78D6C /* ProjectGrasshopper */ = {
 			isa = PBXGroup;
 			children = (
+				9F238DCD1C8AA7C600A78D6C /* Controller */,
+				9F238DCC1C8AA7BF00A78D6C /* View */,
+				9F238DCB1C8AA7AA00A78D6C /* Model */,
 				9F238DB61C89766D00A78D6C /* AppDelegate.swift */,
-				9F238DB81C89766D00A78D6C /* ViewController.swift */,
 				9F238DBA1C89766D00A78D6C /* Main.storyboard */,
 				9F238DC01C89766D00A78D6C /* Assets.xcassets */,
 				9F238DC21C89766D00A78D6C /* LaunchScreen.storyboard */,
@@ -65,6 +75,32 @@
 				9F238DBD1C89766D00A78D6C /* ProjectGrasshopper.xcdatamodeld */,
 			);
 			path = ProjectGrasshopper;
+			sourceTree = "<group>";
+		};
+		9F238DCB1C8AA7AA00A78D6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F238DCF1C8C135A00A78D6C /* Recipe.swift */,
+				9F238DD41C8C190D00A78D6C /* Recipe+CoreDataProperties.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9F238DCC1C8AA7BF00A78D6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F238DD61C8C1FC100A78D6C /* RecipeCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9F238DCD1C8AA7C600A78D6C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9F238DB81C89766D00A78D6C /* ViewController.swift */,
+				9F238DD81C9120AD00A78D6C /* CreateRecipeVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +176,11 @@
 			files = (
 				9F238DB91C89766D00A78D6C /* ViewController.swift in Sources */,
 				9F238DBF1C89766D00A78D6C /* ProjectGrasshopper.xcdatamodeld in Sources */,
+				9F238DD51C8C190D00A78D6C /* Recipe+CoreDataProperties.swift in Sources */,
+				9F238DD71C8C1FC100A78D6C /* RecipeCell.swift in Sources */,
+				9F238DD91C9120AD00A78D6C /* CreateRecipeVC.swift in Sources */,
 				9F238DB71C89766D00A78D6C /* AppDelegate.swift in Sources */,
+				9F238DD11C8C135A00A78D6C /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
